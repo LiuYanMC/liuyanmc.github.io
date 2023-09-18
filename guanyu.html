@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关于反向战役</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #2c3e50;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+        }
+
+        nav a:hover {
+            background-color: #34495e;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .map-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -10px;
+        }
+
+        .map-container .map-item {
+            flex: 1;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .map-container .map-item img {
+            width: 100%;
+        }
+
+        .map-container .map-item h3 {
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+<nav>
+<a href="./index.html">首页</a>
+<a href="./xiazai.html">下载</a>
+<a href="./guanyu.html">关于我们</a>
+</nav>
+</header>
+<main>
+<h1>关于我们</h1>
+<div class="map-container">
+<div class="map-item">
+<h3>反向战役官方交流群</h3>
+<a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=7pVZtNm4cWun9N6aRbvMpro1tNaiqEDR&authKey=tYzMfHqfy3Oxz4S2Y2J7OBCDwXJgEMOdRDc9theW69UPGtG9%2BI%2BUbn%2BWXC6Q1QqO&noverify=0&group_code=213218458" target="_blank" rel="noopener noreferrer">点我加群</a>
+</div>
+<div class="map-item">
+<h3>LiuYan的BiliBili主页</h3>
+<a href="https://m.bilibili.com/space/1205024768" target="_blank" rel="noopener noreferrer">GO！</a>
+</div>
+
+</div>
+</main>
+<footer>
+<p>&copy; Copyright 2023 By 舒兰市实验中学-LiuYanMC，All Rights Reserved！</p>
+<span id="span"></span>
+<script type="text/javascript">
+            function runtime() {
+                // 初始时间，日/月/年 时:分:秒
+                X = new Date("07/16/2023 20:00:00");
+                Y = new Date();
+                T = (Y.getTime() - X.getTime());
+                M = 24 * 60 * 60 * 1000;
+                a = T / M;
+                A = Math.floor(a);
+                b = (a - A) * 24;
+                B = Math.floor(b);
+                c = (b - B) * 60;
+                C = Math.floor((b - B) * 60);
+                D = Math.floor((c - C) * 60);
+                //信息写入到DIV中
+                span.innerHTML = "本站已安全运行: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+            }
+            setInterval(runtime, 1000);
+        </script>
+</footer>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<div id="aplayer" class="aplayer" data-autoplay="true" data-id="3778678" data-server="netease" data-type="playlist" data-fixed="true" data-listfolded="true" data-order="random" data-theme="#f0f0f0"></div>
+<script src="https://unpkg.com/meting@1.2.0/dist/Meting.min.js"></script>
+</body>
+</html>
